@@ -5,6 +5,8 @@ GSMA MobileConnect .Net SDK Demo Applications
 - These demos should provide full example code for completing the authorization flow of MobileConnect
 - Demo code is only for example purposes
 
+- Though demos only exist for Windows 10 UWP, ASP.NET WebApi 2, WPF and Windows 8.1, the SDK also supports ASP.NET Core 1.0, Windows 8 and Windows Phone 8.1
+
 Getting Started
 -----------------
 You must have first registered an account on the [MobileConnect Developer Site](https://developer.mobileconnect.io) and created an application to get your sandbox credentials.
