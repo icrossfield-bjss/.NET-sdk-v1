@@ -11,7 +11,7 @@ Getting Started
 -----------------
 You must have first registered an account on the [MobileConnect Developer Site](https://developer.mobileconnect.io) and created an application to get your sandbox credentials.
 
-Using the credentials from your account page replace the credentials in GSMA.Demo.Config.DemoConfiguration these will be used across all demo applications.
+Using the credentials from your account page either replace the credentials in GSMA.Demo.Config.DemoConfiguration or in GSMA.Demo.Config/config.json these will be used across all demo applications.
 
 Build and run the applications.
 

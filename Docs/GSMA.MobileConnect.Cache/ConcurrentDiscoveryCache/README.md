@@ -40,12 +40,15 @@ Properties
 Methods
 -------
 
-                 | Name        | Description                                                                  
----------------- | ----------- | ---------------------------------------------------------------------------- 
-![Public method] | [Add][6]    | Adds the DiscoveryResponse to the cache with the supplied MCC and MNC values 
-![Public method] | [Clear][7]  | Clears the cache                                                             
-![Public method] | [Get][8]    | Retrieves a copy of the cached response if found and has not expired         
-![Public method] | [Remove][9] | Removes a value from the cache if it exists                                  
+                 | Name                                        | Description                                                                  
+---------------- | ------------------------------------------- | ---------------------------------------------------------------------------- 
+![Public method] | [Add(String, DiscoveryResponse)][6]         | Adds the DiscoveryResponse to the cache with the supplied key value          
+![Public method] | [Add(String, String, DiscoveryResponse)][7] | Adds the DiscoveryResponse to the cache with the supplied MCC and MNC values 
+![Public method] | [Clear][8]                                  | Clears the cache                                                             
+![Public method] | [Get(String)][9]                            | Retrieves a copy of the cached response if found and has not expired         
+![Public method] | [Get(String, String)][10]                   | Retrieves a copy of the cached response if found and has not expired         
+![Public method] | [Remove(String)][11]                        | Removes a value from the cache if it exists                                  
+![Public method] | [Remove(String, String)][12]                | Removes a value from the cache if it exists                                  
 
 
 See Also
@@ -60,9 +63,12 @@ See Also
 [4]: _ctor.md
 [5]: IsEmpty.md
 [6]: Add.md
-[7]: Clear.md
-[8]: Get.md
-[9]: Remove.md
-[10]: ../../_icons/Help.png
+[7]: Add_1.md
+[8]: Clear.md
+[9]: Get.md
+[10]: Get_1.md
+[11]: Remove.md
+[12]: Remove_1.md
+[13]: ../../_icons/Help.png
 [Public method]: ../../_icons/pubmethod.gif "Public method"
 [Public property]: ../../_icons/pubproperty.gif "Public property"

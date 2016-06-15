@@ -1,5 +1,5 @@
-MobileConnectWebInterface.RequestTokenAsync Method
-==================================================
+MobileConnectWebInterface.RequestTokenAsync Method (HttpRequestMessage, DiscoveryResponse, Uri, String, String)
+===============================================================================================================
 Request token using the values returned from the authorization redirect
 
 **Namespace:** [GSMA.MobileConnect][1]  
@@ -11,7 +11,7 @@ Syntax
 ```csharp
 public Task<MobileConnectStatus> RequestTokenAsync(
 	HttpRequestMessage request,
-	OperatorUrls urls,
+	DiscoveryResponse discoveryResponse,
 	Uri redirectedUrl,
 	string expectedState,
 	string expectedNonce
@@ -24,9 +24,9 @@ public Task<MobileConnectStatus> RequestTokenAsync(
 Type: [System.Net.Http.HttpRequestMessage][2]  
 Originating web request
 
-##### *urls*
-Type: [GSMA.MobileConnect.Discovery.OperatorUrls][3]  
-Operator specific urls returned from the discovery process
+##### *discoveryResponse*
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][3]  
+The response returned by the discovery process
 
 ##### *redirectedUrl*
 Type: [System.Uri][4]  
@@ -53,7 +53,7 @@ See Also
 
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/hh159020
-[3]: ../../GSMA.MobileConnect.Discovery/OperatorUrls/README.md
+[3]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
 [4]: http://msdn.microsoft.com/en-us/library/txt7706a
 [5]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [6]: http://msdn.microsoft.com/en-us/library/dd321424

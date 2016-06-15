@@ -24,10 +24,10 @@ The **DiscoveryResponse** type exposes the following members.
 Constructors
 ------------
 
-                 | Name                                      | Description                                                   
----------------- | ----------------------------------------- | ------------------------------------------------------------- 
-![Public method] | [DiscoveryResponse(DiscoveryResponse)][3] | Initializes a new instance of the **DiscoveryResponse** class 
-![Public method] | [DiscoveryResponse(RestResponse)][4]      | Initializes a new instance of the **DiscoveryResponse** class 
+                 | Name                                      | Description                                                                                          
+---------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------- 
+![Public method] | [DiscoveryResponse(DiscoveryResponse)][3] | Creates an instance of the DiscoveryResponse class by copying an existing DiscoveryResponse instance 
+![Public method] | [DiscoveryResponse(RestResponse)][4]      | Creates an instance of the DiscoveryResponse using data from a RestResponse instance                 
 
 
 Properties

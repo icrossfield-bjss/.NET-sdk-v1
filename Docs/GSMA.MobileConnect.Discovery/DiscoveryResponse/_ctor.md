@@ -1,8 +1,8 @@
 DiscoveryResponse Constructor (DiscoveryResponse)
 =================================================
-Initializes a new instance of the [DiscoveryResponse][1] class
+Creates an instance of the DiscoveryResponse class by copying an existing DiscoveryResponse instance
 
-**Namespace:** [GSMA.MobileConnect.Discovery][2]  
+**Namespace:** [GSMA.MobileConnect.Discovery][1]  
 **Assembly:** GSMA.MobileConnect (in GSMA.MobileConnect.dll)
 
 Syntax
@@ -17,19 +17,17 @@ public DiscoveryResponse(
 #### Parameters
 
 ##### *response*
-Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][1]  
-
-[Missing &lt;param name="response"/> documentation for "M:GSMA.MobileConnect.Discovery.DiscoveryResponse.#ctor(GSMA.MobileConnect.Discovery.DiscoveryResponse)"]
-
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][2]  
+DiscoveryResponse to copy
 
 
 See Also
 --------
 
 #### Reference
-[DiscoveryResponse Class][1]  
-[GSMA.MobileConnect.Discovery Namespace][2]  
+[DiscoveryResponse Class][2]  
+[GSMA.MobileConnect.Discovery Namespace][1]  
 
-[1]: README.md
-[2]: ../README.md
+[1]: ../README.md
+[2]: README.md
 [3]: ../../_icons/Help.png

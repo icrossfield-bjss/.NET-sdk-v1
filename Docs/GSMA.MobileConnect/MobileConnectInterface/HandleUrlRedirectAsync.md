@@ -11,9 +11,9 @@ Syntax
 ```csharp
 public Task<MobileConnectStatus> HandleUrlRedirectAsync(
 	Uri redirectedUrl,
+	DiscoveryResponse discoveryResponse = null,
 	string expectedState = null,
-	string expectedNonce = null,
-	string requestTokenUrl = null
+	string expectedNonce = null
 )
 ```
 
@@ -23,33 +23,34 @@ public Task<MobileConnectStatus> HandleUrlRedirectAsync(
 Type: [System.Uri][2]  
 Url redirected to by the completion of the previous step
 
+##### *discoveryResponse* (Optional)
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][3]  
+The response returned by the discovery process
+
 ##### *expectedState* (Optional)
-Type: [System.String][3]  
+Type: [System.String][4]  
 The state value returned from the StartAuthorization call should be passed here, it will be used to validate the authenticity of the authorization process
 
 ##### *expectedNonce* (Optional)
-Type: [System.String][3]  
+Type: [System.String][4]  
 The nonce value returned from the StartAuthorization call should be passed here, it will be used to ensure the token was not requested using a replay attack
 
-##### *requestTokenUrl* (Optional)
-Type: [System.String][3]  
-Url for token request, this is returned by the discovery process. An error status will be returned if the redirected url triggers a token request and this parameter has not been provided.
-
 #### Return Value
-Type: [Task][4]&lt;[MobileConnectStatus][5]>  
+Type: [Task][5]&lt;[MobileConnectStatus][6]>  
 MobileConnectStatus object with required information for continuing the mobileconnect process
 
 See Also
 --------
 
 #### Reference
-[MobileConnectInterface Class][6]  
+[MobileConnectInterface Class][7]  
 [GSMA.MobileConnect Namespace][1]  
 
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/txt7706a
-[3]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
-[4]: http://msdn.microsoft.com/en-us/library/dd321424
-[5]: ../MobileConnectStatus/README.md
-[6]: README.md
-[7]: ../../_icons/Help.png
+[3]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
+[4]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[5]: http://msdn.microsoft.com/en-us/library/dd321424
+[6]: ../MobileConnectStatus/README.md
+[7]: README.md
+[8]: ../../_icons/Help.png

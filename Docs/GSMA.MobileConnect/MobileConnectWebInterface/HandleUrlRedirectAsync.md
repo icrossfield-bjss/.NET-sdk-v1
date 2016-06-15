@@ -1,5 +1,5 @@
-MobileConnectWebInterface.HandleUrlRedirectAsync Method
-=======================================================
+MobileConnectWebInterface.HandleUrlRedirectAsync Method (HttpRequestMessage, Uri, DiscoveryResponse, String, String)
+====================================================================================================================
 Handles continuation of the process following a completed redirect, the request token url must be provided if it has been returned by the discovery process. Only the request and redirectedUrl are required, however if the redirect being handled is the result of calling the Authorization URL then the remaining parameters are required.
 
 **Namespace:** [GSMA.MobileConnect][1]  
@@ -12,9 +12,9 @@ Syntax
 public Task<MobileConnectStatus> HandleUrlRedirectAsync(
 	HttpRequestMessage request,
 	Uri redirectedUrl,
+	DiscoveryResponse discoveryResponse = null,
 	string expectedState = null,
-	string expectedNonce = null,
-	OperatorUrls operatorUrls = null
+	string expectedNonce = null
 )
 ```
 
@@ -28,17 +28,17 @@ Originating web request
 Type: [System.Uri][3]  
 Url redirected to by the completion of the previous step
 
+##### *discoveryResponse* (Optional)
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][4]  
+The response returned by the discovery process
+
 ##### *expectedState* (Optional)
-Type: [System.String][4]  
+Type: [System.String][5]  
 The state value returned from the StartAuthorization call should be passed here, it will be used to validate the authenticity of the authorization process
 
 ##### *expectedNonce* (Optional)
-Type: [System.String][4]  
+Type: [System.String][5]  
 The nonce value returned from the StartAuthorization call should be passed here, it will be used to ensure the token was not requested using a replay attack
-
-##### *operatorUrls* (Optional)
-Type: [GSMA.MobileConnect.Discovery.OperatorUrls][5]  
- Url for token request, this is returned by the discovery process. An error status will be returned if the redirected url triggers a token request and this parameter has not been provided.
 
 #### Return Value
 Type: [Task][6]&lt;[MobileConnectStatus][7]>  
@@ -54,8 +54,8 @@ See Also
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/hh159020
 [3]: http://msdn.microsoft.com/en-us/library/txt7706a
-[4]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
-[5]: ../../GSMA.MobileConnect.Discovery/OperatorUrls/README.md
+[4]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
+[5]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [6]: http://msdn.microsoft.com/en-us/library/dd321424
 [7]: ../MobileConnectStatus/README.md
 [8]: README.md

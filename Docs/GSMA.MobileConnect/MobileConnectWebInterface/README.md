@@ -32,13 +32,16 @@ Constructors
 Methods
 -------
 
-                 | Name                                             | Description                                                                                                                                                                                                                                                                                                                                    
----------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-![Public method] | [AttemptDiscoveryAfterOperatorSelectionAsync][6] | Attempt discovery using the values returned from the operator selection redirect                                                                                                                                                                                                                                                               
-![Public method] | [AttemptDiscoveryAsync][7]                       | Attempt discovery using the supplied parameters. If msisdn, mcc and mnc are null the result will be operator selection, otherwise valid parameters will result in a StartAuthorization status                                                                                                                                                  
-![Public method] | [HandleUrlRedirectAsync][8]                      | Handles continuation of the process following a completed redirect, the request token url must be provided if it has been returned by the discovery process. Only the request and redirectedUrl are required, however if the redirect being handled is the result of calling the Authorization URL then the remaining parameters are required. 
-![Public method] | [RequestTokenAsync][9]                           | Request token using the values returned from the authorization redirect                                                                                                                                                                                                                                                                        
-![Public method] | [StartAuthorization][10]                         | Creates an authorization url with parameters to begin the authorization process                                                                                                                                                                                                                                                                
+                 | Name                                                                                                                 | Description                                                                                                                                                                                                                                                                                                                                    
+---------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+![Public method] | [AttemptDiscoveryAfterOperatorSelectionAsync][6]                                                                     | Attempt discovery using the values returned from the operator selection redirect                                                                                                                                                                                                                                                               
+![Public method] | [AttemptDiscoveryAsync][7]                                                                                           | Attempt discovery using the supplied parameters. If msisdn, mcc and mnc are null the result will be operator selection, otherwise valid parameters will result in a StartAuthorization status                                                                                                                                                  
+![Public method] | [HandleUrlRedirectAsync(HttpRequestMessage, Uri, DiscoveryResponse, String, String)][8]                              | Handles continuation of the process following a completed redirect, the request token url must be provided if it has been returned by the discovery process. Only the request and redirectedUrl are required, however if the redirect being handled is the result of calling the Authorization URL then the remaining parameters are required. 
+![Public method] | [HandleUrlRedirectAsync(HttpRequestMessage, Uri, String, String, String)][9]                                         | Handles continuation of the process following a completed redirect, the request token url must be provided if it has been returned by the discovery process. Only the request and redirectedUrl are required, however if the redirect being handled is the result of calling the Authorization URL then the remaining parameters are required. 
+![Public method] | [RequestTokenAsync(HttpRequestMessage, DiscoveryResponse, Uri, String, String)][10]                                  | Request token using the values returned from the authorization redirect                                                                                                                                                                                                                                                                        
+![Public method] | [RequestTokenAsync(HttpRequestMessage, String, Uri, String, String)][11]                                             | Request token using the values returned from the authorization redirect                                                                                                                                                                                                                                                                        
+![Public method] | [StartAuthorization(HttpRequestMessage, DiscoveryResponse, String, String, String, MobileConnectRequestOptions)][12] | Creates an authorization url with parameters to begin the authorization process                                                                                                                                                                                                                                                                
+![Public method] | [StartAuthorization(HttpRequestMessage, String, String, String, String, MobileConnectRequestOptions)][13]            | Creates an authorization url with parameters to begin the authorization process, the SDKSession id is used to fetch the discovery response                                                                                                                                                                                                     
 
 
 See Also
@@ -46,10 +49,10 @@ See Also
 
 #### Reference
 [GSMA.MobileConnect Namespace][4]  
-[GSMA.MobileConnect.MobileConnectInterface][11]  
-[GSMA.MobileConnect.MobileConnectStatus][12]  
-[GSMA.MobileConnect.MobileConnectConfig][13]  
-[GSMA.MobileConnect.Web.ResponseConverter][14]  
+[GSMA.MobileConnect.MobileConnectInterface][14]  
+[GSMA.MobileConnect.MobileConnectStatus][15]  
+[GSMA.MobileConnect.MobileConnectConfig][16]  
+[GSMA.MobileConnect.Web.ResponseConverter][17]  
 
 [1]: ../../GSMA.MobileConnect.Discovery/IDiscovery/README.md
 [2]: ../../GSMA.MobileConnect.Authentication/IAuthentication/README.md
@@ -59,11 +62,14 @@ See Also
 [6]: AttemptDiscoveryAfterOperatorSelectionAsync.md
 [7]: AttemptDiscoveryAsync.md
 [8]: HandleUrlRedirectAsync.md
-[9]: RequestTokenAsync.md
-[10]: StartAuthorization.md
-[11]: ../MobileConnectInterface/README.md
-[12]: ../MobileConnectStatus/README.md
-[13]: ../MobileConnectConfig/README.md
-[14]: ../../GSMA.MobileConnect.Web/ResponseConverter/README.md
-[15]: ../../_icons/Help.png
+[9]: HandleUrlRedirectAsync_1.md
+[10]: RequestTokenAsync.md
+[11]: RequestTokenAsync_1.md
+[12]: StartAuthorization.md
+[13]: StartAuthorization_1.md
+[14]: ../MobileConnectInterface/README.md
+[15]: ../MobileConnectStatus/README.md
+[16]: ../MobileConnectConfig/README.md
+[17]: ../../GSMA.MobileConnect.Web/ResponseConverter/README.md
+[18]: ../../_icons/Help.png
 [Public method]: ../../_icons/pubmethod.gif "Public method"

@@ -10,7 +10,7 @@ Syntax
 
 ```csharp
 public MobileConnectStatus StartAuthorization(
-	string authorizationUrl,
+	DiscoveryResponse discoveryResponse,
 	string encryptedMSISDN,
 	string state,
 	string nonce,
@@ -20,40 +20,41 @@ public MobileConnectStatus StartAuthorization(
 
 #### Parameters
 
-##### *authorizationUrl*
-Type: [System.String][2]  
-Network specific url for authorization service returned from the Discovery process
+##### *discoveryResponse*
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][2]  
+The response returned by the discovery process
 
 ##### *encryptedMSISDN*
-Type: [System.String][2]  
+Type: [System.String][3]  
 Encrypted MSISDN/Subscriber Id returned from the Discovery process
 
 ##### *state*
-Type: [System.String][2]  
+Type: [System.String][3]  
 Unique state value, this will be returned by the authorization process and should be checked for equality as a security measure
 
 ##### *nonce*
-Type: [System.String][2]  
+Type: [System.String][3]  
 Unique value to associate a client session with an id token
 
 ##### *options*
-Type: [GSMA.MobileConnect.MobileConnectRequestOptions][3]  
+Type: [GSMA.MobileConnect.MobileConnectRequestOptions][4]  
 Optional parameters
 
 #### Return Value
-Type: [MobileConnectStatus][4]  
+Type: [MobileConnectStatus][5]  
 MobileConnectStatus object with required information for continuing the mobileconnect process
 
 See Also
 --------
 
 #### Reference
-[MobileConnectInterface Class][5]  
+[MobileConnectInterface Class][6]  
 [GSMA.MobileConnect Namespace][1]  
 
 [1]: ../README.md
-[2]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
-[3]: ../MobileConnectRequestOptions/README.md
-[4]: ../MobileConnectStatus/README.md
-[5]: README.md
-[6]: ../../_icons/Help.png
+[2]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
+[3]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
+[4]: ../MobileConnectRequestOptions/README.md
+[5]: ../MobileConnectStatus/README.md
+[6]: README.md
+[7]: ../../_icons/Help.png

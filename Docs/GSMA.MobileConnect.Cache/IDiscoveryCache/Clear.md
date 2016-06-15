@@ -9,17 +9,23 @@ Syntax
 ------
 
 ```csharp
-void Clear()
+Task Clear()
 ```
+
+#### Return Value
+Type: [Task][2]  
+
+[Missing &lt;returns> documentation for "M:GSMA.MobileConnect.Cache.IDiscoveryCache.Clear"]
 
 
 See Also
 --------
 
 #### Reference
-[IDiscoveryCache Interface][2]  
+[IDiscoveryCache Interface][3]  
 [GSMA.MobileConnect.Cache Namespace][1]  
 
 [1]: ../README.md
-[2]: README.md
-[3]: ../../_icons/Help.png
+[2]: http://msdn.microsoft.com/en-us/library/dd235678
+[3]: README.md
+[4]: ../../_icons/Help.png

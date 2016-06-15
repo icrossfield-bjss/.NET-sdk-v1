@@ -1,5 +1,5 @@
-ConcurrentDiscoveryCache.Get Method
-===================================
+ConcurrentDiscoveryCache.Get Method (String)
+============================================
 Retrieves a copy of the cached response if found and has not expired
 
 **Namespace:** [GSMA.MobileConnect.Cache][1]  
@@ -9,39 +9,35 @@ Syntax
 ------
 
 ```csharp
-public DiscoveryResponse Get(
-	string mcc,
-	string mnc
+public Task<DiscoveryResponse> Get(
+	string key
 )
 ```
 
 #### Parameters
 
-##### *mcc*
+##### *key*
 Type: [System.String][2]  
-Mobile Country Code
-
-##### *mnc*
-Type: [System.String][2]  
-Mobile Network Code
+Key
 
 #### Return Value
-Type: [DiscoveryResponse][3]  
-A copy of the cached value or null if no cached value or cached value has expired
+Type: [Task][3]&lt;[DiscoveryResponse][4]>  
+A copy of the cached value or null if no cached value found or cached value has expired
 #### Implements
-[IDiscoveryCache.Get(String, String)][4]  
+[IDiscoveryCache.Get(String)][5]  
 
 
 See Also
 --------
 
 #### Reference
-[ConcurrentDiscoveryCache Class][5]  
+[ConcurrentDiscoveryCache Class][6]  
 [GSMA.MobileConnect.Cache Namespace][1]  
 
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
-[3]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
-[4]: ../IDiscoveryCache/Get.md
-[5]: README.md
-[6]: ../../_icons/Help.png
+[3]: http://msdn.microsoft.com/en-us/library/dd321424
+[4]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
+[5]: ../IDiscoveryCache/Get.md
+[6]: README.md
+[7]: ../../_icons/Help.png

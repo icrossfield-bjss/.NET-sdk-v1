@@ -1,5 +1,5 @@
-MobileConnectWebInterface.StartAuthorization Method
-===================================================
+MobileConnectWebInterface.StartAuthorization Method (HttpRequestMessage, DiscoveryResponse, String, String, String, MobileConnectRequestOptions)
+================================================================================================================================================
 Creates an authorization url with parameters to begin the authorization process
 
 **Namespace:** [GSMA.MobileConnect][1]  
@@ -11,7 +11,7 @@ Syntax
 ```csharp
 public MobileConnectStatus StartAuthorization(
 	HttpRequestMessage request,
-	OperatorUrls urls,
+	DiscoveryResponse discoveryResponse,
 	string encryptedMSISDN,
 	string state,
 	string nonce,
@@ -25,9 +25,9 @@ public MobileConnectStatus StartAuthorization(
 Type: [System.Net.Http.HttpRequestMessage][2]  
 Originating web request
 
-##### *urls*
-Type: [GSMA.MobileConnect.Discovery.OperatorUrls][3]  
-Operator specific urls returned from the discovery process
+##### *discoveryResponse*
+Type: [GSMA.MobileConnect.Discovery.DiscoveryResponse][3]  
+The response returned by the discovery process
 
 ##### *encryptedMSISDN*
 Type: [System.String][4]  
@@ -58,7 +58,7 @@ See Also
 
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/hh159020
-[3]: ../../GSMA.MobileConnect.Discovery/OperatorUrls/README.md
+[3]: ../../GSMA.MobileConnect.Discovery/DiscoveryResponse/README.md
 [4]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
 [5]: ../MobileConnectRequestOptions/README.md
 [6]: ../MobileConnectStatus/README.md

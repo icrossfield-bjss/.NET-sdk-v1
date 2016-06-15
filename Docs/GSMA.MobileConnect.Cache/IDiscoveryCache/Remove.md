@@ -1,6 +1,6 @@
-IDiscoveryCache.Remove Method
-=============================
-Remove an entry from the cache that matches the mcc and mnc
+IDiscoveryCache.Remove Method (String)
+======================================
+Remove an entry from the cache that matches the key
 
 **Namespace:** [GSMA.MobileConnect.Cache][1]  
 **Assembly:** GSMA.MobileConnect (in GSMA.MobileConnect.dll)
@@ -9,31 +9,32 @@ Syntax
 ------
 
 ```csharp
-void Remove(
-	string mcc,
-	string mnc
+Task Remove(
+	string key
 )
 ```
 
 #### Parameters
 
-##### *mcc*
+##### *key*
 Type: [System.String][2]  
-Mobile Country Code (Required)
+Key (Required)
 
-##### *mnc*
-Type: [System.String][2]  
-Mobile Network Code (Required)
+#### Return Value
+Type: [Task][3]  
+
+[Missing &lt;returns> documentation for "M:GSMA.MobileConnect.Cache.IDiscoveryCache.Remove(System.String)"]
 
 
 See Also
 --------
 
 #### Reference
-[IDiscoveryCache Interface][3]  
+[IDiscoveryCache Interface][4]  
 [GSMA.MobileConnect.Cache Namespace][1]  
 
 [1]: ../README.md
 [2]: http://msdn.microsoft.com/en-us/library/s1wwdcbf
-[3]: README.md
-[4]: ../../_icons/Help.png
+[3]: http://msdn.microsoft.com/en-us/library/dd235678
+[4]: README.md
+[5]: ../../_icons/Help.png

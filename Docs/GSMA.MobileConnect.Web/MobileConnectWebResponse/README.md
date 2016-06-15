@@ -32,18 +32,18 @@ Constructors
 Properties
 ----------
 
-                   | Name                    | Description                                                                                 
------------------- | ----------------------- | ------------------------------------------------------------------------------------------- 
-![Public property] | [Action][4]             | Action to take for next step                                                                
-![Public property] | [AuthenticationUrls][5] | Operator urls returned from a successful Discovery call, these are required for later steps 
-![Public property] | [Description][6]        | Error user friendly description if available                                                
-![Public property] | [Error][7]              | Error code if available                                                                     
-![Public property] | [Nonce][8]              | Nonce value used during Authorization, should be passed when handling the next redirect     
-![Public property] | [State][9]              | State value used during Authorization, should be passed when handling the next redirect     
-![Public property] | [Status][10]            | "success" or "failure", if "success" the next step should be attempted                      
-![Public property] | [SubscriberId][11]      | Encrypted MSISDN value returned from a successful Discovery call                            
-![Public property] | [Token][12]             | Token data returned from a successful RequestToken call                                     
-![Public property] | [Url][13]               | If next step requires visiting a url it will be returned with this property                 
+                   | Name               | Description                                                                             
+------------------ | ------------------ | --------------------------------------------------------------------------------------- 
+![Public property] | [Action][4]        | Action to take for next step                                                            
+![Public property] | [Description][5]   | Error user friendly description if available                                            
+![Public property] | [Error][6]         | Error code if available                                                                 
+![Public property] | [Nonce][7]         | Nonce value used during Authorization, should be passed when handling the next redirect 
+![Public property] | [SdkSession][8]    | If caching is enabled this will be required in the steps following discovery            
+![Public property] | [State][9]         | State value used during Authorization, should be passed when handling the next redirect 
+![Public property] | [Status][10]       | "success" or "failure", if "success" the next step should be attempted                  
+![Public property] | [SubscriberId][11] | Encrypted MSISDN value returned from a successful Discovery call                        
+![Public property] | [Token][12]        | Token data returned from a successful RequestToken call                                 
+![Public property] | [Url][13]          | If next step requires visiting a url it will be returned with this property             
 
 
 See Also
@@ -56,10 +56,10 @@ See Also
 [2]: ../README.md
 [3]: _ctor.md
 [4]: Action.md
-[5]: AuthenticationUrls.md
-[6]: Description.md
-[7]: Error.md
-[8]: Nonce.md
+[5]: Description.md
+[6]: Error.md
+[7]: Nonce.md
+[8]: SdkSession.md
 [9]: State.md
 [10]: Status.md
 [11]: SubscriberId.md

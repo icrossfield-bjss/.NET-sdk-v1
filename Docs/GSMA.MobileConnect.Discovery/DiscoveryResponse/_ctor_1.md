@@ -1,8 +1,8 @@
 DiscoveryResponse Constructor (RestResponse)
 ============================================
-Initializes a new instance of the [DiscoveryResponse][1] class
+Creates an instance of the DiscoveryResponse using data from a RestResponse instance
 
-**Namespace:** [GSMA.MobileConnect.Discovery][2]  
+**Namespace:** [GSMA.MobileConnect.Discovery][1]  
 **Assembly:** GSMA.MobileConnect (in GSMA.MobileConnect.dll)
 
 Syntax
@@ -17,20 +17,18 @@ public DiscoveryResponse(
 #### Parameters
 
 ##### *rawResponse*
-Type: [GSMA.MobileConnect.Utils.RestResponse][3]  
-
-[Missing &lt;param name="rawResponse"/> documentation for "M:GSMA.MobileConnect.Discovery.DiscoveryResponse.#ctor(GSMA.MobileConnect.Utils.RestResponse)"]
-
+Type: [GSMA.MobileConnect.Utils.RestResponse][2]  
+RestResponse with discovery response content
 
 
 See Also
 --------
 
 #### Reference
-[DiscoveryResponse Class][1]  
-[GSMA.MobileConnect.Discovery Namespace][2]  
+[DiscoveryResponse Class][3]  
+[GSMA.MobileConnect.Discovery Namespace][1]  
 
-[1]: README.md
-[2]: ../README.md
-[3]: ../../GSMA.MobileConnect.Utils/RestResponse/README.md
+[1]: ../README.md
+[2]: ../../GSMA.MobileConnect.Utils/RestResponse/README.md
+[3]: README.md
 [4]: ../../_icons/Help.png
