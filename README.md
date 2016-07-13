@@ -1,14 +1,27 @@
-GSMA MobileConnect .Net SDK Demo Applications
-==============================================================================================================
+# GSMA MobileConnect .Net SDK
 
-- Examples of GSMA MobileConnect SDK Integration in .Net applications
-- These demos should provide full example code for completing the authorization flow of MobileConnect
+- GSMA MobileConnect SDK including example integration in .Net applications
+- The demos in mobile-connect-demos should provide full example code for completing the authorization flow of MobileConnect
 - Demo code is only for example purposes
 
 - Though demos only exist for Windows 10 UWP, ASP.NET WebApi 2, WPF and Windows 8.1, the SDK also supports ASP.NET Core 1.0, Windows 8 and Windows Phone 8.1
 
-Getting Started
------------------
+## Recommended Setup
+
+In order to build and run all demo applications the following are required
+
+- Visual Studio 2013 Update 3 or above
+- Windows 10 SDK (To Build Windows 10 Demo Only)
+- Windows 10 (To Run Windows 10 Demo Only)
+- Windows 8+ (To Build and Run Windows 8 Demo Only)
+
+To utilise the SDK the following are required
+
+- Visual Studio 2012 + Phone SDK 8.0 or Visual Studio 2013+
+
+
+## Getting Started
+
 You must have first registered an account on the [MobileConnect Developer Site](https://developer.mobileconnect.io) and created an application to get your sandbox credentials.
 
 Using the credentials from your account page either replace the credentials in GSMA.Demo.Config.DemoConfiguration or in GSMA.Demo.Config/config.json these will be used across all demo applications.
@@ -21,13 +34,17 @@ The MobileConnect process is implemented in one file for each application
 - GSMA.MobileConnect.Demo.Win8 - MainPage.xaml.cs
 - GSMA.MobileConnect.Demo.Wpf - MainWindow.xaml.cs
 
-Using The SDK
----------------
+## Using The SDK
+
+### Installation
+
 Install the SDK to your .Net application using [Nuget](https://www.nuget.org/packages/GSMA.MobileConnect)
 
 ```posh
 Install-Package GSMA.MobileConnect
 ```
+
+### Configuration
 
 Configure your MobileConnect options using [MobileConnectConfig](Docs/GSMA.MobileConnect/MobileConnectConfig/README.md)
 
@@ -58,8 +75,12 @@ kernel.Bind<MobileConnectWebInterface>().ToSelf().InSingletonScope();
 
 Non-server applications will require the use of some WebView to show the user certain web pages in the authorization process with any redirects to the registered RedirectUrl being caught and handled.
 
-Resources
----------
+## Support
+
+If you encounter any issues which are not resolved by consulting the resources below then [send us a message](https://developer.mobileconnect.io/content/contact-us)
+
+## Resources
+
 - [SDK Class Documentation](Docs/README.md)
 - [MobileConnect Discovery API Information](https://developer.mobileconnect.io/content/discovery-api-0)
 - [MobileConnect Authentication API Information](https://developer.mobileconnect.io/content/mobile-connect-api)
