@@ -4,6 +4,7 @@
 - The demos in mobile-connect-demos should provide full example code for completing the authorization flow of MobileConnect
 - Demo code is only for example purposes
 
+
 - Though demos only exist for Windows 10 UWP, ASP.NET WebApi 2, WPF and Windows 8.1, the SDK also supports ASP.NET Core 1.0, Windows 8 and Windows Phone 8.1
 
 ## Recommended Setup
